@@ -1,3 +1,2 @@
-# Gatsby-hotel
-
-A demo project in which y use Gatsby and React to create a website for a hotel
+# USA-machinery
+Empresa con mas de 10 años de experiencia en renta y venta de montacargas, venta de refacciones y servicio técnico a clientes con equipos

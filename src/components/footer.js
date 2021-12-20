@@ -39,6 +39,7 @@ const Footer = ({ title }) => {
         </div>
       </footer>
       <p
+        id="nosotros"
         css={css`
           text-align: center;
           color: #fff;

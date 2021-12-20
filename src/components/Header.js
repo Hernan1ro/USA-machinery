@@ -14,12 +14,13 @@ const Header = () => {
   return (
     <header
       css={css`
-        background-color: rgba(44, 62, 80);
+        background-color: var(--white);
         padding: 1rem;
       `}
     >
       <div
         css={css`
+          color: var(--gray-primary);
           max-width: 1200px;
           margin: 0 auto;
           @media (min-width: 768px) {

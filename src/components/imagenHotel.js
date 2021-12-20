@@ -7,10 +7,10 @@ const ImageBackground = styled(BackgroundImage)`
   height: 700px;
 `
 
-const ImagenHotel = () => {
+const ForkLiftImage = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "8.jpg" }) {
+      image: file(relativePath: { eq: "8.png" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,12 +20,7 @@ const ImagenHotel = () => {
     }
   `)
   const TextoImagen = styled.div`
-    background-image: linear-gradient(
-      to top,
-      rgba(34, 49, 63, 0.75),
-      rgba(34, 49, 63, 0.75)
-    );
-    color: #fff;
+    color: var(--orange-primary);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,27 +29,24 @@ const ImagenHotel = () => {
     justify-content: center;
 
     h1 {
-      font-size: 4rem;
+      font-size: 6rem;
       margin: 0;
+      @media (min-width: 768px) {
+        font-size: 10rem;
+      }
       @media (min-width: 992px) {
-        font-size: 5.8rem;
+        font-size: 18rem;
       }
     }
-    p {
-      font-size: 2rem;
-      @media (min-width: 992px) {
-        font-size: 2.6rem;
-      }
     }
   `
   return (
     <ImageBackground fadeIn="soft" tag="section" fluid={image.sharp.fluid}>
       <TextoImagen>
-        <h1>Bienvenido a Hotel Gatsby</h1>
-        <p>El mejor hotel para tus vacaciones</p>
+        <h1>Lift with us</h1>
       </TextoImagen>
     </ImageBackground>
   )
 }
 
-export default ImagenHotel
+export default ForkLiftImage

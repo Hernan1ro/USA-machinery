@@ -11,8 +11,8 @@ const Nav = styled.nav`
     margin: auto 0;
   }
 `
-const NavLink = styled(Link)`
-  color: #fff;
+const NavLink = styled.a`
+  color: var(--gray-primary);
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1;
@@ -31,11 +31,20 @@ const NavLink = styled(Link)`
 const Navegacion = () => {
   return (
     <Nav>
-      <NavLink to={"/"} activeClassName="pagina-actual">
+      <NavLink href="#inicio" activeClassName="pagina-actual">
         Inicio
       </NavLink>
-      <NavLink to={"/nosotros"} activeClassName="pagina-actual">
+      <NavLink href="#servicios" activeClassName="pagina-actual">
+        servicios
+      </NavLink>
+      <NavLink href="#nosotros" activeClassName="pagina-actual">
         Nosotros
+      </NavLink>
+      <NavLink href="#historia" activeClassName="pagina-actual">
+        Historia
+      </NavLink>
+      <NavLink href="#marcas" activeClassName="pagina-actual">
+        Marcas
       </NavLink>
     </Nav>
   )

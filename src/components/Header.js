@@ -3,11 +3,23 @@ import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import Navegacion from "./nav"
 import { Link } from "gatsby"
+import logo from "../Icons/logo.png"
 
 const EnlaceHome = styled(Link)`
-  color: #fff;
   text-align: center;
   text-decoration: none;
+`
+const ContactDiv = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: var(--orange-primary);
+  height: 4rem;
+  padding: 1rem;
+  margin: auto 0;
+  i {
+    margin-right: 1rem;
+  }
 `
 
 const Header = () => {
@@ -31,9 +43,18 @@ const Header = () => {
         `}
       >
         <EnlaceHome to="/">
-          <h1>Hotel Gatsby</h1>
+          <img
+            css={css`
+              width: 8rem;
+            `}
+            src={logo}
+          />
         </EnlaceHome>
         <Navegacion />
+        <ContactDiv>
+          <i className="fas fa-phone-alt"></i>
+          <span>81 2032 1618</span>
+        </ContactDiv>
       </div>
     </header>
   )

@@ -4,7 +4,11 @@ import BackgroundImage from "gatsby-background-image"
 import styled from "@emotion/styled"
 
 const ImageBackground = styled(BackgroundImage)`
-  height: 700px;
+  height: 450px;
+  @media (min-width: 768px) {
+    height: 600px;
+    margin-bottom: 1rem;
+  }
 `
 
 const ForkLiftImage = () => {

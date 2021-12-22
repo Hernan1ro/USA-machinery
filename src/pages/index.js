@@ -18,6 +18,20 @@ const ListadoHabitaciones = styled.ul`
     column-gap: 3rem;
   }
 `
+const ConoceMasbtn = styled.div`
+  display: flex;
+  border-radius: 1.5rem;
+  border: solid 1px var(--seconday-gray);
+  padding: 0.5rem;
+  width: 15rem;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: var(--seconday-gray);
+  i {
+    cursor: pointer;
+  }
+`
 
 const IndexPage = () => {
   const habitaciones = useHabitaciones()
@@ -25,16 +39,20 @@ const IndexPage = () => {
   return (
     <Layout>
       <ImagenHotel />
-      <ContenidoInicio />
-      <h2
+      <ConoceMasbtn>
+        CONOCE MÁS
+        <i class="fas fa-chevron-down"></i>
+      </ConoceMasbtn>
+
+      <h1
         css={css`
           text-align: center;
-          margin-top: 5rem;
-          font-size: 3rem;
+          margin-top: 3rem;
+          font-size: 4rem;
         `}
       >
-        Nuestras habitaciones
-      </h2>
+        Servicio
+      </h1>
 
       <ListadoHabitaciones>
         {habitaciones.map(habitacion => {

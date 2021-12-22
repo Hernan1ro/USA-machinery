@@ -35,26 +35,31 @@ const Header = () => {
           color: var(--gray-primary);
           max-width: 1200px;
           margin: 0 auto;
-          @media (min-width: 768px) {
-            display: flex;
-            align-item: center;
-            justify-content: space-between;
-          }
+          display: flex;
+          align-item: center;
+          justify-content: space-between;
         `}
       >
         <EnlaceHome to="/">
           <img
             css={css`
-              width: 8rem;
+              width: 4rem;
             `}
             src={logo}
           />
         </EnlaceHome>
-        <Navegacion />
         <ContactDiv>
           <i className="fas fa-phone-alt"></i>
           <span>81 2032 1618</span>
         </ContactDiv>
+        <i
+          css={css`
+            font-size: 3rem;
+            margin: auto 0;
+            color: var(--gray-primary);
+          `}
+          className="fas fa-bars"
+        ></i>
       </div>
     </header>
   )

@@ -32,7 +32,6 @@ const Footer = ({ title }) => {
             }
           `}
         >
-          <Navegacion />
           <EnlaceHome to="/">
             <h1>Hotel Gatsby</h1>
           </EnlaceHome>

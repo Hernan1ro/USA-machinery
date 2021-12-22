@@ -5,7 +5,7 @@ import ServiceList from "../components/ServiceList"
 
 const ServiceSection = () => {
   return (
-    <>
+    <section>
       <h1
         css={css`
           text-align: center;
@@ -16,7 +16,7 @@ const ServiceSection = () => {
         Servicios
       </h1>
       <ServiceList />
-    </>
+    </section>
   )
 }
 

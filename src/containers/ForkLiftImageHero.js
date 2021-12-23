@@ -10,8 +10,10 @@ const ServiceSection = styled.section`
 
 const ImageBackground = styled(BackgroundImage)`
   height: 450px;
+  max-width: 680px;
+  margin: 0 auto;
   @media (min-width: 768px) {
-    height: 600px;
+    height: 500px;
     margin-bottom: 1rem;
   }
 `
@@ -44,7 +46,7 @@ const ForkLiftImage = () => {
         font-size: 10rem;
       }
       @media (min-width: 992px) {
-        font-size: 18rem;
+        font-size: 10rem;
       }
     }
     }

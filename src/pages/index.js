@@ -4,6 +4,7 @@ import ForkLiftImageHero from "../containers/ForkLiftImageHero"
 import ShowMoreBtn from "../components/ShowMoreBtn"
 import ServiceSection from "../containers/ServiceSection"
 import ServiceImageSection from "../containers/ServiceImageSection"
+import WeSection from "../containers/WeSection"
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <ShowMoreBtn />
       <ServiceSection />
       <ServiceImageSection />
+      <WeSection />
     </Layout>
   )
 }

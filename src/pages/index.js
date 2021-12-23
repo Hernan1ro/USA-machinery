@@ -6,6 +6,7 @@ import ServiceSection from "../containers/ServiceSection"
 import ServiceImageSection from "../containers/ServiceImageSection"
 import WeSection from "../containers/WeSection"
 import ExperienceSection from "../containers/ExperienceSection"
+import OurClients from "../containers/OurClients"
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <ServiceImageSection />
       <WeSection />
       <ExperienceSection />
+      <OurClients />
     </Layout>
   )
 }

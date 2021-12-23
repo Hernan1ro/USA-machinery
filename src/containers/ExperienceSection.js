@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 const Container = styled.section`
   max-width: 1200px;
   background-color: var(--ligt-gray);
-  padding: 12rem 1rem 12rem 1rem;
+  padding: 5rem 1rem 5rem 1rem;
   text-align: center;
   margin: 0 auto;
   margin-top: 3rem;
@@ -22,6 +22,7 @@ const Container = styled.section`
     margin: 0 auto;
   }
   @media (min-width: 768px) {
+    padding: 12rem 1rem 12rem 1rem;
     p {
       font-size: 3.4rem;
     }

@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import ForkLiftImageHero from "../containers/ForkLiftImageHero"
 import ShowMoreBtn from "../components/ShowMoreBtn"
 import ServiceSection from "../containers/ServiceSection"
+import ServiceImageSection from "../containers/ServiceImageSection"
 
 const IndexPage = () => {
   return (
@@ -10,6 +11,7 @@ const IndexPage = () => {
       <ForkLiftImageHero />
       <ShowMoreBtn />
       <ServiceSection />
+      <ServiceImageSection />
     </Layout>
   )
 }

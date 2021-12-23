@@ -1,11 +1,14 @@
 import React from "react"
-import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import ServiceList from "../components/ServiceList"
 
 const ServiceSection = () => {
   return (
-    <section>
+    <section
+      css={css`
+        margin-bottom: 4rem;
+      `}
+    >
       <h1
         css={css`
           text-align: center;

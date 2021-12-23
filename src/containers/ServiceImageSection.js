@@ -9,19 +9,19 @@ const ServiceSection = styled.section`
 `
 
 const ImageBackground = styled(BackgroundImage)`
-  height: 450px;
+  height: 350px;
   @media (min-width: 768px) {
-    height: 600px;
+    height: 700px;
     margin-bottom: 1rem;
   }
 `
 
-const ForkLiftImage = () => {
+const ServiceImageSection = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "8.png" }) {
+      image: file(relativePath: { eq: "man-smilling.jpg" }) {
         sharp: childImageSharp {
-          fluid {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -29,7 +29,7 @@ const ForkLiftImage = () => {
     }
   `)
   const TextoImagen = styled.div`
-    color: var(--orange-primary);
+    color: var(--white);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -38,13 +38,15 @@ const ForkLiftImage = () => {
     justify-content: center;
 
     h1 {
-      font-size: 6rem;
+      font-size: 5rem;
       margin: 0;
+      text-align: center;
+      line-height: 1;
       @media (min-width: 768px) {
         font-size: 10rem;
       }
       @media (min-width: 992px) {
-        font-size: 18rem;
+        font-size: 10rem;
       }
     }
     }
@@ -53,11 +55,13 @@ const ForkLiftImage = () => {
     <ServiceSection>
       <ImageBackground fadeIn="soft" tag="section" fluid={image.sharp.fluid}>
         <TextoImagen>
-          <h1>Lift with us</h1>
+          <h1>
+            Servicio <br /> 24/7
+          </h1>
         </TextoImagen>
       </ImageBackground>
     </ServiceSection>
   )
 }
 
-export default ForkLiftImage
+export default ServiceImageSection

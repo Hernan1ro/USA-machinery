@@ -13,7 +13,7 @@ const Contenido = styled.section`
 
   p {
     margin-top: 0rem;
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 1;
     font-weight: bolder;
     color: var(--gray-primary);
@@ -25,9 +25,13 @@ const Contenido = styled.section`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 40% 60%;
+    padding-bottom: 4rem;
     column-gap: 3rem;
     img {
       width: 105%;
+    }
+    p {
+      font-size: 3.4rem;
     }
   }
 `
@@ -41,7 +45,7 @@ const WeSection = () => {
         </div>
         <div
           css={css`
-            max-width: 350px;
+            max-width: 390px;
             @media (max-width: 768px) {
               display: flex;
               flex-direction: column;
@@ -62,7 +66,7 @@ const WeSection = () => {
           </h3>
           <p>
             Comprometidos con el continuo desarrollo de la eficiencia y
-            productividad del negocio para nuestros clientes
+            productividad del negocio para nuestros clientes.
           </p>
           <ContactButton />
         </div>

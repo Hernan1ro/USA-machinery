@@ -5,6 +5,7 @@ import ShowMoreBtn from "../components/ShowMoreBtn"
 import ServiceSection from "../containers/ServiceSection"
 import ServiceImageSection from "../containers/ServiceImageSection"
 import WeSection from "../containers/WeSection"
+import ExperienceSection from "../containers/ExperienceSection"
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <ServiceSection />
       <ServiceImageSection />
       <WeSection />
+      <ExperienceSection />
     </Layout>
   )
 }

@@ -28,7 +28,6 @@ const Layout = ({ children }) => {
           body {
             margin: 0;
             padding: 0;
-            font-size: 18px;
             font-size: 1.8rem;
             line-height: 1.5;
             font-family: "PT Sans", sans-serif;

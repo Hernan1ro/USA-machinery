@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 
 const ConoceMasbtn = styled.div`
   display: flex;
-  border-radius: 1.5rem;
+  border-radius: 3rem;
   border: solid 1px var(--seconday-gray);
   padding: 0.5rem;
   width: 15rem;

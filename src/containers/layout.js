@@ -1,8 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { Global, css } from "@emotion/react"
-import Header from "./header"
-import Footer from "./footer"
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <Global
         styles={css`
           :root {
-            --white: #fff;
+            --white: #f9f9f9;
             --orange-primary: #f2b753;
             --gray-primary: #32363b;
             --ligt-gray: #c1c1c3;
@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
             scroll-behavior: smooth;
           }
           body {
+            background-color: var(--white)
             margin: 0;
             padding: 0;
             font-size: 1.8rem;

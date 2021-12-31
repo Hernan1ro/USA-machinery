@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../containers/layout"
 import ForkLiftImageHero from "../containers/ForkLiftImageHero"
 import ShowMoreBtn from "../components/ShowMoreBtn"
 import ServiceSection from "../containers/ServiceSection"

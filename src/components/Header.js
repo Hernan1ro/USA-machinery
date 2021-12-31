@@ -2,7 +2,8 @@ import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
-import logo from "../Icons/logo.png"
+import logo from "../icons/logo.png"
+import menuLogo from "../icons/bars-menu.png"
 
 const EnlaceHome = styled(Link)`
   text-align: center;
@@ -13,8 +14,9 @@ const ContactDiv = styled.div`
   align-items: center;
   border-radius: 30px;
   background-color: var(--orange-primary);
-  height: 4rem;
-  padding: 1rem;
+  height: 3.4rem;
+  transform: scale(0.9);
+  padding: 0.8rem 1.8rem;
   margin: auto 0;
   i {
     margin-right: 1rem;
@@ -52,14 +54,14 @@ const Header = () => {
           <i className="fas fa-phone-alt"></i>
           <span>81 2032 1618</span>
         </ContactDiv>
-        <i
+        <img
           css={css`
-            font-size: 3rem;
+            height: 3rem;
             margin: auto 0;
-            color: var(--gray-primary);
           `}
-          className="fas fa-bars"
-        ></i>
+          src={menuLogo}
+          alt="menu-logo"
+        />
       </div>
     </header>
   )

@@ -1,7 +1,6 @@
 import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
-import Navegacion from "./nav"
 import { Link } from "gatsby"
 import logo from "../Icons/logo.png"
 
@@ -42,6 +41,7 @@ const Header = () => {
       >
         <EnlaceHome to="/">
           <img
+            alt="home link"
             css={css`
               width: 4rem;
             `}

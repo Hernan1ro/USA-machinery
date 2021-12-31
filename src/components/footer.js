@@ -83,7 +83,7 @@ const Footer = () => {
           `}
         >
           <input type="text" />
-          <i class="fas fa-arrow-right"></i>
+          <i className="fas fa-arrow-right"></i>
         </div>
         <div
           css={css`

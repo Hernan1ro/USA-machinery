@@ -11,12 +11,14 @@ const Layout = ({ children }) => {
         styles={css`
           :root {
             --white: #f9f9f9;
-            --orange-primary: #f2b753;
+            --orange-primary: #fdb337;
             --gray-primary: #32363b;
             --ligt-gray: #c1c1c3;
             --seconday-gray: #828387;
             --warn-black: #33353b;
             ---third-gray: #a7a8ac;
+            /* fonts size  */
+            --lg: 6rem;
           }
           * {
             box-sizing: border-box;

@@ -38,7 +38,7 @@ const ServiceImageSection = () => {
     justify-content: center;
 
     h1 {
-      font-size: 5rem;
+      font-size: var(--lg);
       margin: 0;
       text-align: center;
       line-height: 1;

@@ -40,7 +40,7 @@ const ForkLiftImage = () => {
     justify-content: center;
 
     h1 {
-      font-size: 6rem;
+      font-size: var(--lg);
       margin: 0;
       @media (min-width: 768px) {
         font-size: 10rem;

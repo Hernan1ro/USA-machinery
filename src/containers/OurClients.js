@@ -14,7 +14,7 @@ const Container = styled.section`
     margin: 0;
     text-align: center;
     line-height: 1;
-    font-size: 6rem;
+    font-size: var(--lg);
     color: var(--warn-black);
   }
   div {

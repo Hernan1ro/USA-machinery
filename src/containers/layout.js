@@ -3,6 +3,8 @@ import Helmet from "react-helmet"
 import { Global, css } from "@emotion/react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import mainFont from "../fonts/david-regular.otf"
+import secondaryFont from "../fonts/Kostic - Roc Grotesk Medium.otf"
 
 const Layout = ({ children }) => {
   return (
@@ -19,11 +21,14 @@ const Layout = ({ children }) => {
             ---third-gray: #a7a8ac;
             /* fonts size  */
             --lg: 6rem;
+            /* fontw  */
+            --main-font: mainFont;
+            --secondary-font: secondaryFont;
           }
           * {
             box-sizing: border-box;
           }
-          html {
+          html { 
             font-size: 62.5%;
             scroll-behavior: smooth;
           }

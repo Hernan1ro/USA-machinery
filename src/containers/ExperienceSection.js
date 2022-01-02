@@ -11,7 +11,7 @@ const Container = styled.section`
   margin-top: 3rem;
   p {
     color: var(--white);
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
     max-width: 430px;
     margin: 0 auto;
@@ -20,6 +20,7 @@ const Container = styled.section`
   }
   button {
     margin: 0 auto;
+    margin-top: 1rem;
   }
   @media (min-width: 768px) {
     padding: 12rem 1rem 12rem 1rem;

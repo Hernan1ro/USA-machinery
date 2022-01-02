@@ -9,7 +9,7 @@ const ServiceSection = styled.section`
 `
 
 const ImageBackground = styled(BackgroundImage)`
-  height: 350px;
+  height: 100vh;
   @media (min-width: 768px) {
     height: 700px;
     margin-bottom: 1rem;

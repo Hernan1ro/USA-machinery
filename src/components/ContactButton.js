@@ -8,8 +8,8 @@ const ContactButton = () => {
         font-weight: 800;
         color: var(--gray-primary);
         background-color: var(--orange-primary);
-        width: 12rem;
-        padding: 0.5rem;
+        max-width: 14rem;
+        padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,6 +17,7 @@ const ContactButton = () => {
         font-size: 1.4rem;
         border: none;
         cursor: pointer;
+        margin-top: 1rem;
       `}
     >
       CONTÁCTANOS

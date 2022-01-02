@@ -10,7 +10,7 @@ const ItemService = styled.div`
   max-width: 235px;
   span {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--ligt-gray);
   }
   h3 {
@@ -18,9 +18,12 @@ const ItemService = styled.div`
     color: var(--gray-primary);
     line-height: 1;
     margin-bottom: 1.2rem;
+    font-size: 2.5rem;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 1;
+    width: 80%;
     font-weight: 600;
     color: var(--seconday-gray);
   }

@@ -112,7 +112,7 @@ const Footer = () => {
             }
           `}
         >
-          &copy; {year} USA Montacargas
+          &copy; {year} USA <br /> Montacargas
         </p>
       </FooterContainer>
     </footer>

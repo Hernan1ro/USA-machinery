@@ -1,10 +1,47 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { Global, css } from "@emotion/react"
+import styled from "@emotion/styled"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import mainFont from "../fonts/david-regular.otf"
 import secondaryFont from "../fonts/Kostic - Roc Grotesk Medium.otf"
+
+const ContactBtn = styled.div`
+  display: flex;
+  border-radius: 4rem;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: var(--lg);
+  position: fixed;
+  background-color: #27d366;
+  padding: 1.2rem 2.5rem;
+  width: fit-content;
+  transform: scale(0.9);
+
+  i {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    i {
+      font-size: 3rem;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+`
 
 const Layout = ({ children }) => {
   return (
@@ -39,6 +76,7 @@ const Layout = ({ children }) => {
             font-size: 1.8rem;
             line-height: 1.5;
             font-family: "PT Sans", sans-serif;
+            position: relative;
           }
           h1,
           h2,
@@ -86,6 +124,10 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer title="USA MACHINERY" />
+      <ContactBtn>
+        <i class="fab fa-whatsapp"></i>
+        <a href="#">Contáctanos</a>
+      </ContactBtn>
     </>
   )
 }

@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 const Nav = styled.nav`
-  display: flex;
   justify-content: center;
   padding-bottom: 3rem;
+  display: none;
   @media (min-width: 768px) {
+    display: flex;
     padding-bottom: 0;
     margin: auto 0;
   }

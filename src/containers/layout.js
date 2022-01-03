@@ -125,7 +125,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer title="USA MACHINERY" />
       <ContactBtn>
-        <i class="fab fa-whatsapp"></i>
+        <i className="fab fa-whatsapp"></i>
         <a href="#">Contáctanos</a>
       </ContactBtn>
     </>

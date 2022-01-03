@@ -10,7 +10,7 @@ const ListServices = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
-  overflow: scroll;
+  overflow-x: scroll;
   @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 235px);
     overflow: hidden;

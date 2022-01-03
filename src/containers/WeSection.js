@@ -56,7 +56,8 @@ const WeSection = () => {
         >
           <h3
             css={css`
-              font-size: var(--lg);
+              font-size: 2.5rem;
+              margin: 0 auto;
               margin-top: 1rem;
               margin-bottom: 1rem;
               color: var(--ligt-gray);

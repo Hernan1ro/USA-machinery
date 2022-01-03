@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
-import logo from "../icons/logo.png"
+import logo from "../icons/logoUsaM.jpeg"
 import menuLogo from "../icons/bars-menu.png"
 
 const EnlaceHome = styled(Link)`
@@ -27,8 +27,11 @@ const Header = () => {
   return (
     <header
       css={css`
-        background-color: var(--white);
+        
         padding: 1rem;
+        position: relative;
+        z-index: 1;
+        
       `}
     >
       <div
@@ -45,14 +48,16 @@ const Header = () => {
           <img
             alt="home link"
             css={css`
-              width: 4rem;
+              width: 6rem;
             `}
             src={logo}
           />
         </EnlaceHome>
         <ContactDiv>
           <i className="fas fa-phone-alt"></i>
-          <span>81 2032 1618</span>
+         <b>
+         <span>81 2032 1618</span>
+        </b> 
         </ContactDiv>
         <img
           css={css`

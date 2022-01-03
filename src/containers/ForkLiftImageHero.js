@@ -6,13 +6,16 @@ import styled from "@emotion/styled"
 const ServiceSection = styled.section`
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 `
 
 const ImageBackground = styled(BackgroundImage)`
   height: 480px;
   max-width: 680px;
   margin: 0 auto;
+  transform: rotate(8deg);
   @media (min-width: 768px) {
+    width: 110%;
     height: 500px;
     margin-bottom: 0.5rem;
   }
@@ -38,6 +41,7 @@ const ForkLiftImage = () => {
     flex: 1;
     align-items: center;
     justify-content: center;
+    transform: rotate(-8deg);
 
     h1 {
       font-size: var(--lg);

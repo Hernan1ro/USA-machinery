@@ -49,10 +49,10 @@ const HamburgerMenu = () => {
       <NavLink href="#historia" activeClassName="pagina-actual">
         Experiencia
       </NavLink>
-      <NavLink href="#marcas" activeClassName="pagina-actual">
+      <NavLink href="#clientes" activeClassName="pagina-actual">
         Clientes
       </NavLink>
-      <NavLink href="#marcas" activeClassName="pagina-actual">
+      <NavLink href="#contacto" activeClassName="pagina-actual">
         Contacto
       </NavLink>
     </Nav>

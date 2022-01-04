@@ -39,6 +39,7 @@ const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <footer
+      id="contacto"
       css={css`
         background-color: var(--gray-primary);
         max-width: 1200px;

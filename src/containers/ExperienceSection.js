@@ -32,7 +32,7 @@ const Container = styled.section`
 
 const ExperienceSection = () => {
   return (
-    <Container>
+    <Container id="historia">
       <p>
         Más de 10 años de experiencia brindandote la mejor opción de montacargas
       </p>

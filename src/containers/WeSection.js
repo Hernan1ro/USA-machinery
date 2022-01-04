@@ -39,7 +39,7 @@ const Contenido = styled.section`
 const WeSection = () => {
   return (
     <>
-      <Contenido>
+      <Contenido id="nosotros">
         <div>
           <img src={weImagen} alt="we-image" />
         </div>

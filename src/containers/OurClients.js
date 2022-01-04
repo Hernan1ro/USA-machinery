@@ -44,16 +44,18 @@ const Container = styled.section`
 const OurClients = () => {
   return (
     <Container>
-      <h1>
-        Nuestros <br /> Clientes
-      </h1>
-      <div>
-        <img src={purikor} alt="purikor" />
-        <img src={altamira} alt="altamira" />
-        <img src={hidrocontrol} alt="aquapark" />
-        <img src={aquapak} alt="kassai" />
-        <img src={kassai} alt="hidrocontrol" />
-      </div>
+      <section id="clientes">
+        <h1>
+          Nuestros <br /> Clientes
+        </h1>
+        <div>
+          <img src={purikor} alt="purikor" />
+          <img src={altamira} alt="altamira" />
+          <img src={hidrocontrol} alt="aquapark" />
+          <img src={aquapak} alt="kassai" />
+          <img src={kassai} alt="hidrocontrol" />
+        </div>
+      </section>
     </Container>
   )
 }

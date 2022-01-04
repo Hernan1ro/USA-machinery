@@ -5,6 +5,7 @@ import ServiceList from "../components/ServiceList"
 const ServiceSection = () => {
   return (
     <section
+      id="servicios"
       css={css`
         margin-bottom: 4rem;
       `}

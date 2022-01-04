@@ -56,7 +56,7 @@ const ForkLiftImage = () => {
     }
   `
   return (
-    <ServiceSection>
+    <ServiceSection id="inicio">
       <ImageBackground fadeIn="soft" tag="section" fluid={image.sharp.fluid}>
         <TextoImagen>
           <h1>Lift with us</h1>

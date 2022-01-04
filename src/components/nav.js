@@ -43,7 +43,7 @@ const Navegacion = () => {
       <NavLink href="#historia" activeClassName="pagina-actual">
         Historia
       </NavLink>
-      <NavLink href="#marcas" activeClassName="pagina-actual">
+      <NavLink href="#clientes" activeClassName="pagina-actual">
         Marcas
       </NavLink>
     </Nav>

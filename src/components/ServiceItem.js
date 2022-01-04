@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
-import { StaticImage } from "gatsby-plugin-image"
-import truckLogo from "../Icons/truck.svg"
 
 const ItemService = styled.div`
   min-width: 23rem;
@@ -27,26 +25,27 @@ const ItemService = styled.div`
     font-weight: 600;
     color: var(--seconday-gray);
   }
+  .service-img {
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
 `
 
-const ServiceItem = () => {
+const ServiceItem = ({
+  imgSrc,
+  title,
+  titlebr1,
+  description,
+  icon,
+  number,
+}) => {
   return (
     <ItemService>
-      <span>01</span>
+      <span>{number}</span>
       <h3>
-        Venta/Renta <br /> de Montacargas
+        {title} <br /> {titlebr1}{" "}
       </h3>
-      <StaticImage
-        placeholder="blurred"
-        layout="fixed"
-        width={210}
-        height={210}
-        src="../images/man-working.jpg"
-        alt="Man working"
-        css={css`
-          margin-bottom: 1rem;
-        `}
-      />
+      <img className="service-img" width={210} height={210} src={imgSrc} />
       <div
         css={css`
           width: 50rem;
@@ -59,17 +58,14 @@ const ServiceItem = () => {
           justify-content: center;
           align-items: center;
           position: absolute;
-          bottom: 105px;
+          bottom: 120px;
           right: 0px;
           transform: scale(1.2);
         `}
       >
-        <img src={truckLogo} alt="truck icon" />
+        <img src={icon} />
       </div>
-      <p>
-        Con nosotros puedes rentar/comprar nuestros modelos de montacargas
-        nuevos, seminuevos y usados
-      </p>
+      <p>{description}</p>
     </ItemService>
   )
 }

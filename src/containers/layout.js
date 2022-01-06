@@ -48,6 +48,12 @@ const Layout = ({ children }) => {
     <>
       <Global
         styles={css`
+          @font-face {
+          font-family: "david_05_bold-webfont(1)";
+          src: local("david_05_bold-webfont(1)"),
+          url("../fonts/david_05_bold-webfont(1)") format("truetype");
+          font-weight: bold;
+          }
           :root {
             --white: #f9f9f9;
             --orange-primary: #fdb337;
@@ -59,7 +65,7 @@ const Layout = ({ children }) => {
             /* fonts size  */
             --lg: 6rem;
             /* fontw  */
-            --main-font: mainFont;
+            --main-font: "david_05_bold-webfont(1)";
             --secondary-font: secondaryFont;
           }
           * {

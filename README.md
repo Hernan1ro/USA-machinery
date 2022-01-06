@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#usamachinerypage">
-        <img src="./src/icons/logo.png" height="100" alt="USA MACHINERY"/>
+        <img src="./logo.png" height="100" alt="USA MACHINERY"/>
     </a>
 </p>
 

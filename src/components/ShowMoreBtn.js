@@ -12,12 +12,10 @@ const ConoceMasbtn = styled.div`
   justify-content: space-around;
   margin: 0 auto;
   color: var(--seconday-gray);
-  font-weight: bold;
+  font-weight: 400;
   position: relative;
   z-index: 1;
-  i {
     cursor: pointer;
-  }
 `
 
 const ShowMoreBtn = () => {

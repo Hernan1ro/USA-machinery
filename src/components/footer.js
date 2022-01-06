@@ -6,6 +6,8 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  max-width: 1200px;
+
   i {
     font-size: 2.6rem;
     color: var(--white);
@@ -42,7 +44,6 @@ const Footer = () => {
       id="contacto"
       css={css`
         background-color: var(--gray-primary);
-        max-width: 1200px;
         padding: 2rem 2rem 4rem 2rem;
         margin: 0 auto;
         position: relative;

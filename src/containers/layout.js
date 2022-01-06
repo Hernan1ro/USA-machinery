@@ -7,38 +7,45 @@ import Footer from "../components/footer"
 import mainFont from "../fonts/david-regular.otf"
 import secondaryFont from "../fonts/Kostic - Roc Grotesk Medium.otf"
 
-const ContactBtn = styled.div`
+const ContactBtn = styled.a`
+  text-decoration:none;
+  color:white;
   display: flex;
   border-radius: 4rem;
   align-items: center;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   z-index: 1000;
-  font-size: var(--lg);
   position: fixed;
   background-color: #27d366;
-  padding: 1.2rem 2.5rem;
+  padding: 1rem 2rem;
   width: fit-content;
-  transform: scale(0.9);
 
   i {
     color: white;
+    font-size: 2.5rem;
+
   }
-  a {
+  p {
+    margin:0;
+    paddin:0;
     text-decoration: none;
     color: white;
-    font-size: 3rem;
     font-weight: bold;
     margin-left: 1rem;
+    font-size: 1.5rem;
+
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     i {
-      font-size: 3rem;
+      font-size: 3.5rem;
+
     }
-    a {
+    p{
       font-size: 2rem;
+
     }
   }
 `
@@ -76,7 +83,7 @@ const Layout = ({ children }) => {
             scroll-behavior: smooth;
           }
           body {
-            background-color: var(--white)
+            background-color: var(--white);
             margin: 0;
             padding: 0;
             font-size: 1.8rem;
@@ -130,9 +137,9 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer title="USA MACHINERY" />
-      <ContactBtn>
+      <ContactBtn href="#">
         <i className="fab fa-whatsapp"></i>
-        <a href="#">Contáctanos</a>
+        <p>Contáctanos</p>
       </ContactBtn>
     </>
   )

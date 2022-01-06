@@ -24,7 +24,7 @@ const ImageBackground = styled(BackgroundImage)`
 const ForkLiftImage = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "8.png" }) {
+      image: file(relativePath: { eq: "hero.png" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp

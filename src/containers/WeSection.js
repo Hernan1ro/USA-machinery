@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
-import weImagen from "../images/8.png"
+import weImagen from "../images/hero.png"
 import ContactButton from "../components/ContactButton"
 
 const Contenido = styled.section`

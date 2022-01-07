@@ -6,7 +6,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import mainFont from "../fonts/david-regular.otf"
 import secondaryFont from "../fonts/Kostic - Roc Grotesk Medium.otf"
-
+import "./layout.css"
 const ContactBtn = styled.a`
   text-decoration:none;
   color:white;

@@ -19,6 +19,7 @@ const FooterContainer = styled.div`
     border: none;
     border-bottom: 2px solid var(--white);
     outline: none;
+    color:white;
   }
   h6 {
     font-size: 2rem;

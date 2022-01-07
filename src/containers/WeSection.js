@@ -10,7 +10,9 @@ const Contenido = styled.section`
   width: 95%;
   margin: 0 auto;
   grid-template-columns: 1fr;
-
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   p {
     margin-top: 0rem;
     font-size: 2.4rem;

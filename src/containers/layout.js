@@ -7,9 +7,10 @@ import Footer from "../components/footer"
 import mainFont from "../fonts/david-regular.otf"
 import secondaryFont from "../fonts/Kostic - Roc Grotesk Medium.otf"
 import "./layout.css"
+
 const ContactBtn = styled.a`
-  text-decoration:none;
-  color:white;
+  text-decoration: none;
+  color: white;
   display: flex;
   border-radius: 4rem;
   align-items: center;
@@ -25,27 +26,23 @@ const ContactBtn = styled.a`
   i {
     color: white;
     font-size: 2.5rem;
-
   }
   p {
-    margin:0;
-    paddin:0;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: white;
     font-weight: bold;
     margin-left: 1rem;
     font-size: 1.5rem;
-
   }
 
   @media (min-width: 768px) {
     i {
       font-size: 3.5rem;
-
     }
-    p{
+    p {
       font-size: 2rem;
-
     }
   }
 `
@@ -55,6 +52,12 @@ const Layout = ({ children }) => {
     <>
       <Global
         styles={css`
+          @font-face {
+            font-family: "david_05_bold-webfont(1)";
+            src: local("david_05_bold-webfont(1)"),
+              url("../fonts/david_05_bold-webfont(1)") format("truetype");
+            font-weight: bold;
+          }
           :root {
             --white: #f9f9f9;
             --orange-primary: #fdb337;
@@ -66,13 +69,13 @@ const Layout = ({ children }) => {
             /* fonts size  */
             --lg: 6rem;
             /* fontw  */
-            --main-font: mainFont;
+            --main-font: "david_05_bold-webfont(1)";
             --secondary-font: secondaryFont;
           }
           * {
             box-sizing: border-box;
           }
-          html { 
+          html {
             font-size: 62.5%;
             scroll-behavior: smooth;
           }

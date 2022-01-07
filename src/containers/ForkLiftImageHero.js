@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useRef } from "react"
+
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styled from "@emotion/styled"
@@ -20,6 +21,9 @@ const ImageBackground = styled(BackgroundImage)`
     height: 500px;
     margin-bottom: 0.5rem;
     width: 100%;
+  }
+  :after{
+    filter: brightness(85%);
   }
 `
 
@@ -240,9 +244,15 @@ const ForkLiftImage = () => {
       }
     }
   `
+  const bgHeroRef = useRef();
+
   return (
     <ServiceSection id="inicio">
-      <ImageBackground fadeIn="soft" tag="section" fluid={image.sharp.fluid}>
+      <ImageBackground 
+      ref={bgHeroRef}
+      onStartLoad={() => bgHeroRef.current.selfRef.classList.toggle("loading")}
+      onLoad={() => bgHeroRef.current.selfRef.classList.toggle("loading")} 
+      fluid={image.sharp.fluid}>
         <TextoImagen>
           <div>
             <h1 className="animation1">L</h1>

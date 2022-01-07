@@ -18,10 +18,18 @@ const ConoceMasbtn = styled.div`
     cursor: pointer;
   p{
     margin:0 5px;
-    paddin:0;
+    padding: 3px 5px;
+    font-size:1.2rem;
   }
   i{
     margin:0 5px;
+  }
+
+  @media (min-width: 768px) {
+    p{
+    
+      font-size: 1.5rem;
+    }
   }
 `
 

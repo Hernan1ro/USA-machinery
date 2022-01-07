@@ -15,14 +15,22 @@ const Contenido = styled.section`
   align-items:center;
   p {
     margin-top: 0rem;
-    font-size: 2.4rem;
-    line-height: 1;
+    font-size: 3rem;
+    line-height: 1.2;
     font-weight: bolder;
     color: var(--gray-primary);
     margin-bottom: 2rem;
   }
-  img {
+  .we-wrapper-img{
     width: 100%;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+  }
+  img {
+    width: auto;
+    height: 500px;
+    transform: rotate(9deg);
   }
   @media (min-width: 768px) {
     display: grid;
@@ -35,6 +43,14 @@ const Contenido = styled.section`
     p {
       font-size: 3.4rem;
     }
+    .we-wrapper-img{
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      transform: rotate(9deg);
+    }
   }
 `
 
@@ -42,7 +58,7 @@ const WeSection = () => {
   return (
     <>
       <Contenido id="nosotros">
-        <div>
+        <div className="we-wrapper-img">
           <img src={weImagen} alt="we-image" />
         </div>
         <div

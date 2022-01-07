@@ -52,25 +52,21 @@ const Layout = ({ children }) => {
     <>
       <Global
         styles={css`
-          @font-face {
-            font-family: "david_05_bold-webfont(1)";
-            src: local("david_05_bold-webfont(1)"),
-              url("../fonts/david_05_bold-webfont(1)") format("truetype");
-            font-weight: bold;
+          .loading::before,
+          .loading::after {
+            filter: blur(15px);
+            border-radius: 16px;
           }
           :root {
             --white: #f9f9f9;
             --orange-primary: #fdb337;
             --gray-primary: #32363b;
-            --ligt-gray: #c1c1c3;
+            --ligt-gray: #a7a8ab;
             --seconday-gray: #828387;
             --warn-black: #33353b;
             ---third-gray: #a7a8ac;
             /* fonts size  */
             --lg: 6rem;
-            /* fontw  */
-            --main-font: "david_05_bold-webfont(1)";
-            --secondary-font: secondaryFont;
           }
           * {
             box-sizing: border-box;
@@ -85,7 +81,6 @@ const Layout = ({ children }) => {
             padding: 0;
             font-size: 1.8rem;
             line-height: 1.5;
-            font-family: "PT Sans", sans-serif;
             position: relative;
           }
           h1,
@@ -93,13 +88,6 @@ const Layout = ({ children }) => {
           h3 {
             margin: 0;
             line-height: 1.5;
-          }
-          h1,
-          h2 {
-            font-family: "Roboto", serif;
-          }
-          h3 {
-            font-family: "PT Sans", sans-serif;
           }
           ul {
             list-style: none;

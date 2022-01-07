@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 const Nav = styled.nav`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   background-color: var(--gray-primary);
   right: 0;
   left: 0;
@@ -39,22 +39,22 @@ const HamburgerMenu = () => {
   return (
     <Nav className="hamburger-menu">
       <i onClick={() => hideMenu()} className="fas fa-times"></i>
-      <NavLink href="#inicio" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#inicio" activeClassName="pagina-actual">
         Inicio
       </NavLink>
-      <NavLink href="#servicios" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#servicios" activeClassName="pagina-actual">
         Servicios
       </NavLink>
-      <NavLink href="#nosotros" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#nosotros" activeClassName="pagina-actual">
         Nosotros
       </NavLink>
-      <NavLink href="#historia" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#historia" activeClassName="pagina-actual">
         Experiencia
       </NavLink>
-      <NavLink href="#clientes" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#clientes" activeClassName="pagina-actual">
         Clientes
       </NavLink>
-      <NavLink href="#contacto" activeClassName="pagina-actual">
+      <NavLink onClick={() => hideMenu()} href="#contacto" activeClassName="pagina-actual">
         Contacto
       </NavLink>
     </Nav>

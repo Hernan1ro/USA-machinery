@@ -1,6 +1,6 @@
 @import "../css/typography.css";
 
-body,p {
+body,p,a {
     font-family: "David regular";
   }
  

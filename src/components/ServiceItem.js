@@ -60,7 +60,7 @@ const ServiceItem = ({
       </h3>
       <img className="service-img" width={210} height={210} src={imgSrc} />
       <div className="service-icon" >
-        <img  src={icon} />
+      <img  src={icon} />
       </div>
       <p>{description}</p>
     </ItemService>

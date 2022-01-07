@@ -21,7 +21,7 @@ const ContactDiv = styled.div`
   background-color: var(--orange-primary);
   height: 3.4rem;
   transform: scale(0.9);
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 3rem;
   margin: auto 0;
   i {
     margin-right: 1rem;

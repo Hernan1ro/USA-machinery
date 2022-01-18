@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 import styled from "@emotion/styled"
 
 const ServiceSection = styled.section`
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
 `
 

@@ -43,7 +43,7 @@ const ServiceList = () => {
   const title4 = "Pólizas de"
   const titlebr4 = "Mantenimiento"
   const description4 =
-    "Te brindamos el mantenimiento a tus montacargas con un tecnológico en planta o recibimos tu equipo en nuestro establecimiento."
+    "Te brindamos el mantenimiento a tus montacargas con un técnico en planta o recibimos tu equipo en nuestro establecimiento."
 
   return (
     <ListServices>

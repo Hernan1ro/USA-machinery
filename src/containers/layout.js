@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
           }
           :root {
             --white: #f9f9f9;
-            --orange-primary: #fdb337;
+            --orange-primary: #eab860;
             --gray-primary: #32363b;
             --ligt-gray: #a7a8ab;
             --seconday-gray: #828387;

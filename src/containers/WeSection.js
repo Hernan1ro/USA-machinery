@@ -7,7 +7,7 @@ import ContactButton from "../components/ContactButton"
 const Contenido = styled.section`
   padding-top: 4rem;
   max-width: 1200px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   grid-template-columns: 1fr;
   display:flex;
@@ -32,14 +32,20 @@ const Contenido = styled.section`
     height: 500px;
     transform: rotate(9deg);
   }
+  h3{
+    font-size: 2.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ligt-gray);
+  }
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% auto;
     padding-bottom: 4rem;
     column-gap: 3rem;
-    img {
-      width: 105%;
-    }
+
+    
     p {
       font-size: 3.4rem;
     }
@@ -47,9 +53,11 @@ const Contenido = styled.section`
       width: 100%;
     }
     img {
-      width: 100%;
-      height: 100%;
-      transform: rotate(9deg);
+      width: auto;
+      height: 80vh;
+    }
+    h3{
+      font-size: 5rem; 
     }
   }
 `
@@ -72,15 +80,7 @@ const WeSection = () => {
             }
           `}
         >
-          <h3
-            css={css`
-              font-size: 2.5rem;
-              margin: 0 auto;
-              margin-top: 1rem;
-              margin-bottom: 1rem;
-              color: var(--ligt-gray);
-            `}
-          >
+          <h3>
             Nosotros
           </h3>
           <p>

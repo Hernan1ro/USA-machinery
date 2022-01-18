@@ -23,6 +23,7 @@ const ItemService = styled.div`
     line-height: 1;
     width: 100%;
     color: var(--gray-primary);
+    font-weight: 400;
   }
   .service-img {
     object-fit: cover;

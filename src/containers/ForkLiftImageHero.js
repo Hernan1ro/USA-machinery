@@ -12,22 +12,53 @@ const ServiceSection = styled.section`
 
 const ImageBackground = styled(BackgroundImage)`
   height: 480px;
-  width: 100%;
   max-width: 680px;
+  width: 100%;
   margin: 0 auto;
   transform: rotate(8deg);
   
   :after{
+    filter: brightness(85%);
+    -webkit-animation: bounce-down 1.6s linear infinite;
+    animation: bounce-down 1.6s linear infinite;
     width: 110% !important;
+  }
+
+
+  @-webkit-keyframes bounce-down {
+    25% {
+          -webkit-transform: translateY(-4px);
+    }
+    50%, 100% {
+          -webkit-transform: translateY(0);
+    }
+    75% {
+          -webkit-transform: translateY(4px);
+    }
+  }
+
+  @keyframes bounce-down {
+      25% {
+          transform: translateY(-4px);
+      }
+      50%, 100% {
+          transform: translateY(0);
+      }
+      75% {
+          transform: translateY(4px);
+      }
   }
   @media (min-width: 768px) {
     width: 100%;
     height: 500px;
     margin-bottom: 0.5rem;
     width: 100%;
-    :after{
-      filter: brightness(85%);
-    }
+  }
+
+  @media (min-width: 992px) {
+    margin-top:-20px;
+    height: 90vh;
+    max-width: 900px;
   }
 `
 
@@ -252,7 +283,8 @@ const ForkLiftImage = () => {
 
   return (
     <ServiceSection id="inicio">
-      <ImageBackground 
+      <ImageBackground
+      className="bounce-animation" 
       ref={bgHeroRef}
       onStartLoad={() => bgHeroRef.current.selfRef.classList.toggle("loading")}
       onLoad={() => bgHeroRef.current.selfRef.classList.toggle("loading")} 

@@ -24,19 +24,19 @@ const FooterContainer = styled.div`
     font-size: 2rem;
     color: var(--white);
     margin: 2rem 0 0 0;
+    font-weight: 500;
   }
   p {
     line-height: 1;
     color: var(---third-gray);
     font-size: 1.6rem;
     margin: 1rem 0;
-    font-weight: bold;
   }
   .arrow{
     display:none;
   }
   @media (min-width: 768px) {
-    margin-left: 40%;
+    margin-left: 34%;
   }
 `
 
@@ -59,7 +59,7 @@ const Footer = () => {
         <span
           css={css`
             color: var(--white);
-            font-weight: 700;
+            font-weight: 500;
             font-size: 2rem;
           `}
         >
@@ -68,7 +68,7 @@ const Footer = () => {
         <span
           css={css`
             color: var(--ligt-gray);
-            font-weight: 700;
+            font-weight: 500;
             font-size: 2rem;
           `}
         >
@@ -120,7 +120,7 @@ const Footer = () => {
             }
           `}
         >
-          &copy; {year} USA <br /> Montacargas
+          &copy; {year} USA Montacargas
         </p>
       </FooterContainer>
     </footer>

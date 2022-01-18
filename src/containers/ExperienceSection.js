@@ -3,7 +3,7 @@ import ContactButton from "../components/ContactButton"
 import styled from "@emotion/styled"
 
 const Container = styled.section`
-  max-width: 1200px;
+  // max-width: 1200px;
   background-color: var(--ligt-gray);
   padding: 5rem 1rem 5rem 1rem;
   text-align: center;
@@ -26,6 +26,8 @@ const Container = styled.section`
     padding: 12rem 1rem 12rem 1rem;
     p {
       font-size: 3.4rem;
+      max-width: 500px;
+
     }
   }
 `

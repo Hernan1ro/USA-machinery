@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header
       css={css`
-        padding: 1rem;
+        padding: 2rem;
         position: relative;
         z-index: 1;
       `}
@@ -52,7 +52,7 @@ const Header = () => {
       <div
         css={css`
           color: var(--gray-primary);
-          max-width: 1200px;
+          // max-width: 1200px;
           margin: 0 auto;
           display: flex;
           align-item: center;

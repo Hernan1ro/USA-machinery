@@ -120,7 +120,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer title="USA MACHINERY" />
-      <ContactBtn href="#">
+      <ContactBtn href="https://api.whatsapp.com/send?phone=+528120321618">
         <i className="fab fa-whatsapp"></i>
         <p>Contáctanos</p>
       </ContactBtn>

@@ -5,15 +5,24 @@ import BackgroundImage from "gatsby-background-image"
 import styled from "@emotion/styled"
 
 const ServiceSection = styled.section`
-  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  height: 80vh;
+  min-height: 500px;
+  width:100%;
+  @media (min-width: 768px) {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 992px) {
+  }
+
 `
 
 const ImageBackground = styled(BackgroundImage)`
-  height: 480px;
-  max-width: 680px;
-  width: 100%;
+  height:inherit;
+  min-height: inherit;
+  width:auto;
   margin: 0 auto;
   transform: rotate(8deg);
   
@@ -22,6 +31,14 @@ const ImageBackground = styled(BackgroundImage)`
     -webkit-animation: bounce-down 1.6s linear infinite;
     animation: bounce-down 1.6s linear infinite;
     width: 110% !important;
+  }
+
+  @media (min-width: 992px) {
+    :after{
+      background-size: contain !important;
+      max-height: 1100px !important;
+    }
+
   }
 
 
@@ -48,18 +65,7 @@ const ImageBackground = styled(BackgroundImage)`
           transform: translateY(4px);
       }
   }
-  @media (min-width: 768px) {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 0.5rem;
-    width: 100%;
-  }
-
-  @media (min-width: 992px) {
-    margin-top:-20px;
-    height: 90vh;
-    max-width: 900px;
-  }
+  
 `
 
 const ForkLiftImage = () => {
@@ -89,11 +95,9 @@ const ForkLiftImage = () => {
       overflow: hidden;
       position: relative;
       width: fit-content;
-      height: 115px;
+      height: fit-content;
       margin: 0 auto;
-      @media (max-width: 768px) {
-        height: 70px;
-      }
+      
     }
     h1:nth-child(4) {
       margin-right: 2rem;
@@ -107,6 +111,9 @@ const ForkLiftImage = () => {
       margin: 0;
       @media (min-width: 768px) {
         font-size: 10rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 12.5rem;
       }
     }
     .animation1 {

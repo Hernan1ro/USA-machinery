@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
-import purikor from "../images/purikor.png"
-import altamira from "../images/altamira.png"
-import hidrocontrol from "../images/hidrocontrol.png"
-import aquapak from "../images/aquapak.png"
-import kassai from "../images/kassai.png"
+import collado from "../images/collado.svg" 
+import delprimo from "../images/delprimo.svg" 
+import ficoxa from "../images/ficoxa.svg" 
+import gbox from "../images/gbox.svg" 
+import grupogodin from "../images/grupogodin.svg" 
+import nutrioli from "../images/nutrioli.svg" 
 
 const Container = styled.section`
   max-width: 1200px;
@@ -21,11 +22,12 @@ const Container = styled.section`
     margin: 2rem;
     text-align: center;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    overflow-x:auto;
   }
   img {
-    width: 9rem;
+    margin: 0 10px;
+    height: 50px;
+    width: auto;
   }
   @media (min-width: 768px) {
     padding: 5rem 0 5rem 0;
@@ -33,7 +35,6 @@ const Container = styled.section`
       justify-content: space-around;
     }
     img {
-      transform: scale(2);
     }
     h1 {
       margin-bottom: 5rem;
@@ -49,11 +50,12 @@ const OurClients = () => {
           Nuestros <br /> Clientes
         </h1>
         <div>
-          <img src={purikor} alt="purikor" />
-          <img src={altamira} alt="altamira" />
-          <img src={hidrocontrol} alt="aquapark" />
-          <img src={aquapak} alt="kassai" />
-          <img src={kassai} alt="hidrocontrol" />
+          <img src={delprimo} alt="delprimo" />
+          <img src={ficoxa} alt="ficoxa" />
+          <img src={gbox} alt="gbox" />
+          <img src={collado} alt="collado" />
+          <img src={grupogodin} alt="grupogodin" />
+          <img src={nutrioli} alt="nutrioli" />
         </div>
       </section>
     </Container>

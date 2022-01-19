@@ -6,10 +6,8 @@ import ContactButton from "../components/ContactButton"
 
 const Contenido = styled.section`
   padding-top: 4rem;
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  grid-template-columns: 1fr;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -22,14 +20,13 @@ const Contenido = styled.section`
     margin-bottom: 2rem;
   }
   .we-wrapper-img{
-    width: 100%;
+    width:100%;
     overflow:hidden;
     display:flex;
-    justify-content:center;
+    justify-content: center;
   }
   img {
-    width: auto;
-    height: 500px;
+    width: 200%;
     transform: rotate(9deg);
   }
   h3{
@@ -40,8 +37,8 @@ const Contenido = styled.section`
     color: var(--ligt-gray);
   }
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 60% auto;
+    overflow: hidden;
+    flex-direction:row;
     padding-bottom: 4rem;
     column-gap: 3rem;
 
@@ -50,11 +47,11 @@ const Contenido = styled.section`
       font-size: 3.4rem;
     }
     .we-wrapper-img{
-      width: 100%;
+      width:50%;
     }
     img {
-      width: auto;
-      height: 80vh;
+      width: 130%;
+   
     }
     h3{
       font-size: 5rem; 

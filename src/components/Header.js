@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
-import logo from "../icons/logoUsaM.jpeg"
-import menuLogo from "../icons/bars-menu.png"
+import logo from "../images/USA.svg"
+import menuLogo from "../images/bars-menu.png"
 import Navegacion from "../components/nav"
 import HamburgerMenu from "../components/nav-hamburger-menu"
 
@@ -26,6 +26,10 @@ const ContactDiv = styled.div`
   i {
     margin-right: 1rem;
   }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 `
 const Img = styled.img`
   height: 3rem;
@@ -41,12 +45,17 @@ const Header = () => {
     const menu = document.querySelector(".hamburger-menu")
     menu.style.top = "0";
   }
+
   return (
-    <header
+    <header 
       css={css`
         padding: 2rem;
-        position: relative;
-        z-index: 1;
+        position:   sticky;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        transition: all 0.3s ease-out;
+        background:  var(--white);
       `}
     >
       <div
@@ -73,7 +82,10 @@ const Header = () => {
         <ContactDiv>
           <i className="fas fa-phone-alt"></i>
           <b>
-            <span>81 2032 1618</span>
+            <span>
+              <a href="tel:+528183589390">81 8358 9390 </a>
+            </span>
+
           </b>
         </ContactDiv>
         <Img onClick={() => showMenu()} src={menuLogo} alt="menu-logo" />

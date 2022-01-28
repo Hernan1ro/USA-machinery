@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
-import downArow from "../Icons/arowRegular.png"
-const ConoceMasbtn = styled.div`
+import downArow from "../images/arowRegular.png"
+const ConoceMasbtn = styled.a`
+  text-decoration: none;
   display: flex;
   align-items: center;
   border-radius: 3rem;
@@ -43,7 +44,7 @@ const ConoceMasbtn = styled.div`
 
 const ShowMoreBtn = () => {
   return (
-    <ConoceMasbtn>
+    <ConoceMasbtn href="#servicios">
       <p>CONOCE MÁS</p>
       <i >
         <img src={downArow} alt="icon.png"/>

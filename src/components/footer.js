@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
-import arowRightIcon from "../Icons/arowRightIcon.svg"
+import arowRightIcon from "../images/arowRightIcon.svg"
 const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ const Footer = () => {
         >
           Compártenos tu correo
         </span>
-        <form action="mailto:sofia@happer.mx?subject=Suscrito a ustedes" method="post" enctype="text/plain"
+        <form action="mailto:gaguirre@usamachinery.com.mx?subject=Suscrito a ustedes" method="post" enctype="text/plain"
           css={css`
             height: 5rem;
             border-bottom: 3px solid var(--white);
@@ -107,7 +107,7 @@ const Footer = () => {
           <div>
             <h6>Contacto</h6>
             <p>
-              Horarios de Oficina <br /> 8:30 - 6:00 <br /> 81 2032 1618{" "}
+              Horarios de Oficina <br /> 8:30 - 6:00 <br /> 81 8358 9390{" "}
             </p>
           </div>
         </div>

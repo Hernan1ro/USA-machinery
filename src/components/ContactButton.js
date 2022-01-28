@@ -3,9 +3,9 @@ import { css } from "@emotion/react"
 
 const ContactButton = () => {
   return (
-    <button
+    <a href="#contacto"
       css={css`
-        
+        text-decoration: none;
         font-weight: 800;
         color: var(--gray-primary);
         background-color: var(--orange-primary);
@@ -23,7 +23,7 @@ const ContactButton = () => {
       `}
     >
       CONTÁCTANOS
-    </button>
+    </a>
   )
 }
 

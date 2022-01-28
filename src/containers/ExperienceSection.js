@@ -18,7 +18,7 @@ const Container = styled.section`
     line-height: 1;
     margin-bottom: 2rem;
   }
-  button {
+  a {
     margin: 0 auto;
     margin-top: 1rem;
   }

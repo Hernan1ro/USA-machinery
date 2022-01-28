@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import collado from "../images/collado.svg" 
-import delprimo from "../images/delprimo.svg" 
+import logistic from "../images/logistic.svg" 
 import ficoxa from "../images/ficoxa.svg" 
 import gbox from "../images/gbox.svg" 
 import grupogodin from "../images/grupogodin.svg" 
@@ -47,10 +47,10 @@ const OurClients = () => {
     <Container>
       <section id="clientes">
         <h1>
-          Nuestros <br /> Clientes
+        Algunos de Nuestros<br />Clientes
         </h1>
         <div>
-          <img src={delprimo} alt="delprimo" />
+          <img src={logistic} alt="logitic" />
           <img src={ficoxa} alt="ficoxa" />
           <img src={gbox} alt="gbox" />
           <img src={collado} alt="collado" />

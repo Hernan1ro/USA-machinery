@@ -1,9 +1,11 @@
-import React from "react"
+import React, {useState} from "react"
 import Helmet from "react-helmet"
 import { Global, css } from "@emotion/react"
 import styled from "@emotion/styled"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import ModalFooterForm from "../components/ModalFooterForm"
+
 import "./layout.css"
 
 const ContactBtn = styled.a`
@@ -46,10 +48,16 @@ const ContactBtn = styled.a`
 `
 
 const Layout = ({ children }) => {
+
+  const [mail, setMail] = useState("");
+  const [sendEmailModal, setSendEmailModal] = useState(false);
+
   return (
     <>
       <Global
         styles={css`
+          position: relative;
+
           .loading::before,
           .loading::after {
             filter: blur(15px);
@@ -96,8 +104,9 @@ const Layout = ({ children }) => {
       />
       <Helmet>
         <title>USA MACHINERY</title>
+        <link rel="../images/USA.svg"></link>
         <meta
-          name="description"
+          name="description"  
           content="Empresa con mas de 10 años de experiencia en renta y venta de montacargas, venta de refacciones y servicio técnico a clientes con equipos"
         />
         <link
@@ -119,11 +128,14 @@ const Layout = ({ children }) => {
       </Helmet>
       <Header />
       {children}
-      <Footer title="USA MACHINERY" />
+      <Footer title="USA MACHINERY" mail={mail} handleMail={setMail} handlSendEmailModal={setSendEmailModal}/>
       <ContactBtn href="https://api.whatsapp.com/send?phone=+528120321618">
         <i className="fab fa-whatsapp"></i>
         <p>Contáctanos</p>
       </ContactBtn>
+      {sendEmailModal && 
+          <ModalFooterForm mail={mail} handlSendEmailModal={setSendEmailModal}/>
+      }
     </>
   )
 }

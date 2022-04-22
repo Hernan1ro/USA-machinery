@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import arowRightIcon from "../images/arowRightIcon.svg"
@@ -8,15 +8,21 @@ const FooterContainer = styled.div`
   margin-top: 2rem;
   max-width: 1200px;
 
-  label,img {
+  label{
     width: 25px;
+    border-bottom: 2px solid var(--white);
+    height: 100%;
+  }
+  label img {
+    width: inherit;
+    height: 100%;
   }
   input {
     height: inherit;
     width: -webkit-fill-available;
     background-color: var(--gray-primary);
     border: none;
-    border-bottom: 1px solid var(--white);
+    border-bottom: 2px solid var(--white);
     outline: none;
     color:white;
   }
@@ -40,8 +46,30 @@ const FooterContainer = styled.div`
   }
 `
 
-const Footer = () => {
+const MessageErrorEmail = styled.p`
+  color:red !important;
+`;
+
+const Footer = ({mail, handleMail, handlSendEmailModal}) => {
   const year = new Date().getFullYear()
+
+  const [emailEmpty, setEmailEmpty] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+
+  const openModalVerification = (e) =>{
+      if(mail === ""){
+        setEmailEmpty(true);
+      }else{
+        setEmailEmpty(false);
+      }
+      if (/^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i.test(mail)){
+        handlSendEmailModal(true);
+        setEmailError(false);
+      }else{
+        setEmailError(true);
+      }
+  }
+  
   return (
     <footer
       id="contacto"
@@ -74,25 +102,35 @@ const Footer = () => {
         >
           Compártenos tu correo
         </span>
-        <form action="mailto:gaguirre@usamachinery.com.mx?subject=Suscrito a ustedes" method="post" enctype="text/plain"
+        <form 
           css={css`
             height: 5rem;
-            border-bottom: 3px solid var(--white);
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: 600px;
             @media (min-width: 768px) {
-              margin-bottom: 8rem;
             }
           `}
         >
-          <input type="text" name="mail"/>
-          <label for="arrow">
+          <input required type="email" name="mail" value={mail} onChange={(e)=>handleMail(e.target.value)}/>
+          <label for="arrow" 
+          css={css`
+              cursor:pointer;
+          `}>
             <img src={arowRightIcon} alt/>
           </label >
-          <input className="arrow" id="arrow" type="submit" value="Send" ></input>
+          <input className="arrow" id="arrow" onClick={() => openModalVerification()}></input>
         </form>
+         <div className="error_mail"
+         css={css`
+         @media (min-width: 768px) {
+           margin-bottom: 8rem;
+         }
+       `}>
+          {emailEmpty && <MessageErrorEmail>Este campo es requerido</MessageErrorEmail>}
+          {emailError && <MessageErrorEmail>Ingrese un correo valido</MessageErrorEmail>}
+         </div>
         <div
           css={css`
             display: grid;
@@ -122,6 +160,7 @@ const Footer = () => {
         >
           &copy; {year} USA Montacargas
         </p>
+        
       </FooterContainer>
     </footer>
   )

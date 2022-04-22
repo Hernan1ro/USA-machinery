@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../containers/layout"
 import ForkLiftImageHero from "../containers/ForkLiftImageHero"
 import ShowMoreBtn from "../components/ShowMoreBtn"

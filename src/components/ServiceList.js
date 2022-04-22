@@ -35,15 +35,15 @@ const ServiceList = () => {
   const title2 = "Venta de"
   const titlebr2 = "Refacciones"
   const description2 =
-    "Contamos con la mejor calidad en piezas para la reparación y mantenimiento de tu montacargas."
+    "Contamos con la mejor calidad en piezas para la reparación y mantenimiento de tu equipo."
   const title3 = "Regeneración"
   const titlebr3 = "de Baterías"
   const description3 =
-    "Utilizando una tecnología de última generación, duplicamos la vida de tu batería de montacargas."
+    "Utilizando la tecnología de última generación, duplicamos la vida de tu batería de equipo."
   const title4 = "Pólizas de"
   const titlebr4 = "Mantenimiento"
   const description4 =
-    "Te brindamos el mantenimiento a tus montacargas con un técnico en planta o recibimos tu equipo en nuestro establecimiento."
+    "Te brindamos el servicio a tus equipos con un técnico en tu planta,al igual, recibimos tu equipo en nuestroestablecimiento."
 
   return (
     <ListServices>

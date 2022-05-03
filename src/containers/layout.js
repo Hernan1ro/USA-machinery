@@ -8,7 +8,46 @@ import ModalFooterForm from "../components/ModalFooterForm"
 
 import "./layout.css"
 
-const ContactBtn = styled.a`
+const ContactBtnPC = styled.a`
+  text-decoration: none;
+  color: white;
+  display: none;
+  border-radius: 4rem;
+  align-items: center;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  position: fixed;
+  background-color: #27d366;
+  padding: 1rem 2rem;
+  width: fit-content;
+
+  i {
+    color: white;
+    font-size: 2.5rem;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    i {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+`
+const ContactBtnMOBILE = styled.a`
   text-decoration: none;
   color: white;
   display: flex;
@@ -38,6 +77,7 @@ const ContactBtn = styled.a`
   }
 
   @media (min-width: 768px) {
+    display: none;
     i {
       font-size: 3.5rem;
     }
@@ -129,10 +169,20 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer title="USA MACHINERY" mail={mail} handleMail={setMail} handlSendEmailModal={setSendEmailModal}/>
-      <ContactBtn href="https://api.whatsapp.com/send?phone=+528120321618">
+      <ContactBtnPC 
+      // href="https://api.whatsapp.com/send?phone=+528120321618">
+      href="https://web.whatsapp.com/send?phone=+528120321618">
         <i className="fab fa-whatsapp"></i>
         <p>Contáctanos</p>
-      </ContactBtn>
+      </ContactBtnPC>
+
+      <ContactBtnMOBILE
+      href="https://api.whatsapp.com/send?phone=+528120321618"
+      // href="https://web.whatsapp.com/send?phone=+528120321618"
+      >
+        <i className="fab fa-whatsapp"></i>
+        <p>Contáctanos</p>
+      </ContactBtnMOBILE>
       {sendEmailModal && 
           <ModalFooterForm mail={mail} handlSendEmailModal={setSendEmailModal}/>
       }

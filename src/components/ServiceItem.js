@@ -43,6 +43,10 @@ const ItemService = styled.div`
     bottom: 140px;
     right: 0px;
   }
+
+  .service-icon img{
+    width: 100%; 
+  }
 `
 
 const ServiceItem = ({

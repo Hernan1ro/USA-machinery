@@ -69,9 +69,8 @@ const ModalFooterForm = ({mail, handlSendEmailModal}) => {
 
     return (
     <form 
-    action={`mailto:gaguirre@usamachinery.com.mx?subject=Estoy interesado en ${how_can_we_help_you_txt}!&body=Hola, me podrían ayudar brindándome más información sobre ${how_can_we_help_you_txt}
-    mi correo es: ${mail}, 
-    Gracias.`} method="POST" enctype="text/plain"
+    action={`https://formsubmit.co/94722662edb999e7d6116babf4e2652e`} 
+    method="POST" 
     css={css`
         z-index: 1000;
         position: fixed;
@@ -154,7 +153,10 @@ const ModalFooterForm = ({mail, handlSendEmailModal}) => {
                 `}
                 />
             </Option>
-            <input type="text" name="mail" value={mail} hidden={true}/>
+            <input type="email" name="email" value={mail} hidden={true}/>
+            
+            <textarea name="mensaje" 
+            value={`${how_can_we_help_you_txt}`} hidden={true}/>
             <InputSendMail className="arrow" id="arrow" type="submit" value="ENVIAR" ></InputSendMail>
         </ModalFooterFormContainer>
         <small

@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="#usamachinerypage">
+    <a href="https://www.usamachinery.com.mx/">
         <img src="./logo.png" height="100" alt="USA MACHINERY"/>
     </a>
 </p>
